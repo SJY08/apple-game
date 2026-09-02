@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+
+@import "tailwindcss";
+
+:root {
+    --apple-red: #e0392f;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    font-family: "Noto Sans KR", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+}
