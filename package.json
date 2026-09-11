@@ -29,6 +29,8 @@
     "@electron-forge/plugin-vite": "^7.11.2",
     "@electron/fuses": "^1.8.0",
     "@types/electron-squirrel-startup": "^1.0.2",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "electron": "44.1.1",
@@ -42,6 +44,8 @@
     "electron-squirrel-startup": "^1.0.1",
     "framer-motion": "^13.1.1",
     "lucide-react": "^1.39.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "tailwindcss": "^4.3.3"
   }
 }
