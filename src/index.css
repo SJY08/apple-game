@@ -2,8 +2,13 @@
 
 @import "tailwindcss";
 
-:root {
-    --apple-red: #e0392f;
+@theme {
+    --color-apple-50: #fdf1f0;
+    --color-apple-200: #f3bab5;
+    --color-apple-500: #e0392f;
+    --color-apple-600: #b92c23;
+    --color-leaf-400: #7cb342;
+    --color-leaf-500: #5f9c37;
 }
 
 html,
