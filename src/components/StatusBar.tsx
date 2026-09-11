@@ -20,8 +20,8 @@ export function StatusBar({ score, bestScore, timeLeft, roundSeconds, onHome }: 
           type="button"
           onClick={onHome}
           aria-label="처음으로 나가기"
-          className="pointer-events-auto mb-1 flex h-9 w-9 items-center justify-center rounded-full bg-stone-100 text-stone-500 outline-none transition-colors duration-100 ease-out hover:bg-stone-200 hover:text-stone-700 focus-visible:ring-4 focus-visible:ring-stone-200">
-          <HomeIcon className="h-4 w-4" aria-hidden="true" />
+          className="pointer-events-auto mb-1 flex h-14 w-14 items-center justify-center rounded-2xl bg-apple-500 text-white shadow-[0_4px_0_0_rgba(150,32,26,0.5)] outline-none transition-[transform,background-color] duration-100 ease-out hover:bg-apple-600 focus-visible:ring-4 focus-visible:ring-apple-200 active:translate-y-[2px]">
+          <HomeIcon className="h-6 w-6" aria-hidden="true" />
         </button>
 
         <div>
