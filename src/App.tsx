@@ -34,7 +34,8 @@ export function App({ roundSeconds = 120 }: AppProps) {
             score={game.score}
             bestScore={game.bestScore}
             timeLeft={game.timeLeft}
-            roundSeconds={roundSeconds} />
+            roundSeconds={roundSeconds}
+            onHome={game.goToStart} />
           
           </div>
 

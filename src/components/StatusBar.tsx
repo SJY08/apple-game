@@ -1,20 +1,29 @@
 import { motion } from 'framer-motion';
-import { ClockIcon, TrophyIcon } from 'lucide-react';
+import { ClockIcon, HomeIcon, TrophyIcon } from 'lucide-react';
 
 type StatusBarProps = {
   score: number;
   bestScore: number;
   timeLeft: number;
   roundSeconds: number;
+  onHome: () => void;
 };
 
 /** 점수·시간 상태 표시 컴포넌트 */
-export function StatusBar({ score, bestScore, timeLeft, roundSeconds }: StatusBarProps) {
+export function StatusBar({ score, bestScore, timeLeft, roundSeconds, onHome }: StatusBarProps) {
   const urgent = timeLeft <= 10;
 
   return (
     <div className="flex w-full items-end justify-between gap-6">
       <div className="flex items-end gap-8">
+        <button
+          type="button"
+          onClick={onHome}
+          aria-label="처음으로 나가기"
+          className="pointer-events-auto mb-1 flex h-9 w-9 items-center justify-center rounded-full bg-stone-100 text-stone-500 outline-none transition-colors duration-100 ease-out hover:bg-stone-200 hover:text-stone-700 focus-visible:ring-4 focus-visible:ring-stone-200">
+          <HomeIcon className="h-4 w-4" aria-hidden="true" />
+        </button>
+
         <div>
           <p className="text-xs font-bold tracking-wide text-stone-500">없앤 사과</p>
           <p className="font-display text-4xl leading-none text-stone-900 tabular-nums">{score}</p>
