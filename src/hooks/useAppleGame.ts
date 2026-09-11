@@ -110,10 +110,11 @@ export function useAppleGame(roundSeconds: number): AppleGame {
   }, [roundSeconds, clearStuckTimeout]);
 
   const goToStart = useCallback(() => {
+    clearStuckTimeout();
     setAnchor(null);
     setCursor(null);
     setPhase('start');
-  }, []);
+  }, [clearStuckTimeout]);
 
   const beginDrag = useCallback(
     (point: Point) => {
